@@ -6,8 +6,14 @@ $_SESSION["username"]="Jas";
 $_SESSION["password"]="Singh";
 $_SESSION["color"]="red";
 $_SESSION["address"]="139 Carrington Road";
-?>
 
+if (isset($_post["message"])) {
+    echo "<p>I have a post message in this page </p>";
+}else{
+    echo "<p>please post a message to me</p>";
+
+}
+?>
 <html>
 <head>
 <title>session exercise</title>
@@ -23,5 +29,9 @@ $_SESSION["address"]="139 Carrington Road";
 <li><a herf="page1.php">page 5 </a> </li>
 
 </ul>
+<form action="<?php $_server["PHP_SELF"]; ?>" method="post">
+    <input name="message" type="text" placeholder="message here">
+    <input type="submit" value="post">
+
 </body>
 </html>

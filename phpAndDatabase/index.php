@@ -9,6 +9,9 @@ $_SESSION["address"]="139 Carrington Road";
 
 if (isset($_POST["message"])) {
     echo "<p>I have a post message in this page </p>";
+    //start a session
+    @session_start();
+    //set session variable
 }else{
     echo "<p>please post a message to me</p>";
 

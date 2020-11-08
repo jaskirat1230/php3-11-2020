@@ -7,7 +7,7 @@ $_SESSION["password"]="Singh";
 $_SESSION["color"]="red";
 $_SESSION["address"]="139 Carrington Road";
 
-if (isset($_post["message"])) {
+if (isset($_POST["message"])) {
     echo "<p>I have a post message in this page </p>";
 }else{
     echo "<p>please post a message to me</p>";

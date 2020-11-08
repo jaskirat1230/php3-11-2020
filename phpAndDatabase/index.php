@@ -2,10 +2,10 @@
 //start session
 @session_start();
 //set values to session variables
-$_session ["username"]="Jas";
-$_session ["password"]="Singh";
-$_session ["color"]="red";
-$_session ["address"]="139 Carrington Road";
+$_SESSION["username"]="Jas";
+$_SESSION["password"]="Singh";
+$_SESSION["color"]="red";
+$_SESSION["address"]="139 Carrington Road";
 ?>
 
 <html>
